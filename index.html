@@ -59,7 +59,7 @@ title: Your Slide Show Title Here
 
 <p>If you want to try it yourself, install (fetch) the new template pack. Issue the command:</p>
 
-<pre><code>$ slideshow -f impress.js
+<pre><code>$ slideshow install impress.js
 </code></pre>
 
 <p>Or as an alternative clone the template pack using <code>git</code>. Issue the commands:</p>
@@ -68,9 +68,9 @@ title: Your Slide Show Title Here
 $ git clone git://github.com/slideshow-s9/slideshow-impress.js.git
 </code></pre>
 
-<p>To check if the new template got installed, use the <code>-l/--list</code> switch/command:</p>
+<p>To check if the new template got installed, use the <code>list</code> command:</p>
 
-<pre><code>$ slideshow -l
+<pre><code>$ slideshow list
 </code></pre>
 
 <p>Listing something like:</p>
@@ -81,7 +81,7 @@ $ git clone git://github.com/slideshow-s9/slideshow-impress.js.git
 
 <p>Tip: To get started use the included quick starter sample. Issue the command:</p>
 
-<pre><code>$ slideshow -q impress.js
+<pre><code>$ slideshow new -t impress.js
 </code></pre>
 
 <p>Now you will have a copy of the impress.js Quick Starter sample
@@ -150,10 +150,10 @@ want to know more?
 [use the source](http://github.com/bartaz/impress.js), Luke!
 </code></pre>
 
-<p>Showtime! Let's use the <code>-t/--template</code> switch to generate the
+<p>Showtime! Let's use the <code>-t/--template</code> switch to build the
 sample slide show. Example:</p>
 
-<pre><code>$ slideshow -t impress.js impress.js.text
+<pre><code>$ slideshow build impress.js.text -t impress.js
 </code></pre>
 
 <p>Open up the generated <code>impress.js.html</code> page in your browser. Voila. That's it.</p>
